@@ -22,6 +22,11 @@ const monsterName = document.querySelector("#monsterName");
 const monsterHealthText = document.querySelector("#monsterHealth");
 
 /**
+ * this array stores objects
+ * objects are indicated by curly braces
+ */
+const locations = [{}];
+/**
  * functions allow to run sections of code at specific times
  */
 // initialize buttons
@@ -30,7 +35,7 @@ button2.onclick= goCave;
 button3.onclick= fightDragon;
 
 function update(location) {
-  
+
 }
 
 function goTown() {
