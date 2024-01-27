@@ -120,10 +120,18 @@ function buyWeapon() {
   }
 }
 
-function fightSlime(){
+function sellWeapon() {
+  if (inventory.length > 1) {
+    gold = 15;
+    goldText.innerText = gold;
+
+  }
+}
+
+function fightSlime() {
 
 }
 
-function fightBeast(){
+function fightBeast() {
   
 }
