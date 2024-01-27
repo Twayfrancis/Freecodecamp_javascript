@@ -10,6 +10,7 @@ let fighting;
 let monsterHealth;
 let inventory = ["stick", "dagger", "sword"];
 
+
 const button1 = document.querySelector('#button1');
 const button2 = document.querySelector("#button2");
 const button3 = document.querySelector("#button3");
@@ -26,22 +27,10 @@ const monsterHealthText = document.querySelector("#monsterHealth");
  * objects are indicated by curly braces
  */
 const weapons = [
-  {
-    name: "stick",
-    power: "5"
-  },
-  {
-    name: "dagger",
-    power: "30"
-  },
-  {
-    name: "claw hammer",
-    power: "50"
-  },
-  {
-    name: "sword",
-    power: "100"
-  }
+  { name: "stick", power: "5" },
+  { name: "dagger", power: "30" },
+  { name: "claw hammer", power: "50" },
+  { name: "sword", power: "100" }
 ];
 
 const locations = [
@@ -118,6 +107,9 @@ function buyWeapon() {
     goldText.innerText = gold;
     let newWeapon = weapons[currentWeapon].name;
     text.innerText = "You now have a " + newWeapon + "."
+    inventory.push(newWeapon);
+    text.innerText += " In your inventory you have: " + inventory;
+
   }
 }
 
